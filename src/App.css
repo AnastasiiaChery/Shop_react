@@ -1,38 +1,282 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,800;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Manrope:wght@600;700;800&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(241,241,241);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ 
+/* ***************Логотип, название, поиск и корзина*************** */
+.logotype{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.logo{
+  height: 70px;
+  margin-left: 120px;
+  margin-top: 20px;
+  }
+.name{
+  /* margin-left: -80px; */
+  font-size: 35px;
+  font-family: 'Dancing Script', cursive;
+  color:rgb(243, 49, 91);
+  font-weight: bold;
+ margin-top: 0px;
+}
+
+.name A {
+  color:rgb(225,60,93);
+ 
+} 
+.main-logo{
+  height: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.search-and-bask{
+  display: flex;
+  
+
+}
+.basket{
+  height: 60px;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 20px;
+}
+
+.search-and-bask input{
+
+color:  rgb(229,46,85);
+margin-left: 70px;
+  margin-top: 45px;
+  height: 35px;
+  width: 600px;
+ background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+ 
+ box-shadow: rgb(229,46,85);
+ border-radius: 10px;
+ border-color: rgb(229,46,85);
+ 
+ 
+  }
+/* ***************Верхнее меню, логинация*************** */
+     /* Стили верхнего меню */
+
+     li{
+      list-style-type: none;
+     font-size: 20px; 
+    }
+    A:link { 
+       text-decoration: none; 
+     } 
+     
+     .admin{
+      display: flex;
+      background-color: rgb(229,46,85);
+      height: 60px;
+      width: 100%;
+      justify-content: space-around;
+      
+      align-items: center;
+    }
+    
+     /* Лево */
+  
+
+  .inform{
+ 
+    margin: 1px;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -50px;
+  }
+  .inform A {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: rgb(255, 255, 255);
+    
+  } 
+  
+ 
+/* Право */
+  .log-menu{
+     margin-right: -80px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+   
+    text-align:center;
+    
+  }
+  .registr{
+    background-color: rgb(245,177,106);
+    width: 120px;
+   
+    border-radius: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 50px;
+    
+  }
+  .entrance{
+    width: 120px;
+   height:30px ;
+    background-color:rgb(245,177,106);
+    border-radius: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+   font-size: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center ;  
+   height: 50px;
+  }
+  .log-menu A {
+    color: rgb(0, 0, 0);
+    
+  } 
+  /* *************Меню с продукцией***************** */
+  .propose{
+    font-family: 'Montserrat Alternates', sans-serif;
+    
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .main-border{
+    width: 75%;
+    
+    margin: auto;
+  }
+  .eat{
+    display: flex;
+    justify-content: space-around;
+  }
+  .cake{
+height: 120px;
+width: 22%;
+background-color: rgb(255,179,196);
+border-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+  }
+  .cupcakes{
+    height: 120px;
+    width: 22%;
+    background-color: rgb(255,135,158);
+    border-radius: 15px;
+    display: flex;
+align-items: center;
+justify-content: center;
+
+  }
+  .cheesecakes{
+    height: 120px;
+    width: 22%;
+    background-color: rgb(251,98,129);
+    border-radius: 15px;
+    display: flex;
+align-items: center;
+justify-content: center;
+
+  }
+  .baking{
+    height: 120px;
+    width: 22%;
+    background-color: rgb(225,60,93);
+    border-radius: 15px;
+    display: flex;
+align-items: center;
+justify-content: center;
+
+
+  }
+
+  .eat A {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 25px;
+  } 
+
+
+/* {*********Форма для подписки**********} */
+
+.subskribe{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(245,177,106);
+  align-items: center;
+  height: 80px;
+}
+.subskribe input{
+  
+  height: 35px;
+  width: 600px;
+ background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+ 
+ box-shadow: rgb(229,46,85);
+ border-radius: 10px;
+ border-color: rgb(229,46,85);
 }
 
-.App-link {
-  color: #61dafb;
+.subskribe button{
+  margin-left: 15px;
+  font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    background-color: rgb(229,46,85);
+    border-radius: 10px;
+ border-color: rgb(229,46,85);
+ height: 45px;
+ width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* {*********Нижнее меню**********} */
+  .second-menu{
+
+    background-color: rgb(89, 88, 88);
+    width: 100%;
+    height: 200px;
+    display: flex;
+justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+
+  .second-logo{
+    margin-top: 30px;
+    display: flex;
   }
-}
+
+  .inform-last{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; 
+    margin-right: 15%;
+   
+    color: rgb(255, 253, 253);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+  }
+
+  .inform-last A {
+   
+    color: rgb(255, 253, 253);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+  } 
+  .inf-block{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
