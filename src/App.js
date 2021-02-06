@@ -14,7 +14,7 @@ import Dessert from './component/Desseert';
 import Login from './component/Login';
 import MainPage from './component/MainPage';
 import Pie from './component/Pie';
-import Product from './component/Product';
+import AboutUs from './component/AboutUs';
 
 import logo from './component/image/Logo.png';
 import basket from './component/image/Basket.png';
@@ -39,7 +39,7 @@ function App() {
  {/* *********Верхнее меню, логинация********** */}
  <div class="admin">
    <div class='inform'>
-   <li> <NavLink to="/contact">О нас</NavLink> <br/></li>
+   <li> <NavLink to="/about">О нас</NavLink> <br/></li>
    <li><NavLink to="/login">Доставка и оплата</NavLink><br/></li>
    <li > <NavLink to="/contact">Работа</NavLink> <br/></li>
    <li> <NavLink to="/contact">Контакты</NavLink> <br/></li>
@@ -63,7 +63,7 @@ function App() {
 
       <div>
       <Switch>
-      
+          <Route path='/about' component={AboutUs}/>
           <Route path='/cakes' component={Cakes}/>
           <Route path='/dessert/' component={Dessert}/>
           <Route path='/pie/' component={Pie}/>

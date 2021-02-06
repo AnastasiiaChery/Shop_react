@@ -11,19 +11,28 @@
     
 height: auto;
 display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: center;
+
+
       
   
 }
 .one_block{
-    height: 300px;
-    width: 320px;
+    height: 280px;
+    width: 280px;
     background-color: white;
     border-radius: 10px;
-    margin: 30px 20px ;
+    margin: 30px 15px ;
 }
 
 .photo{
     height: 230px;
     width: 100%;
     border-radius: 10px;
+}
+
+.desc_ab_us{
+    
 }
