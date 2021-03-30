@@ -20,5 +20,7 @@ iframe{
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     align-items: center;
+    border-color: white;
+    border-radius: 2px;
 
 }

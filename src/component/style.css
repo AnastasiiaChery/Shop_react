@@ -20,12 +20,14 @@ justify-content: center;
   
 }
 .one_block{
-    height: 280px;
+    height: 360px;
     width: 280px;
     background-color: white;
     border-radius: 10px;
     margin: 30px 15px ;
 }
+
+
 
 .photo{
     height: 230px;
@@ -33,6 +35,59 @@ justify-content: center;
     border-radius: 10px;
 }
 
-.desc_ab_us{
-    
+.photoProd{
+    height: auto;
+    width: 40%;
+    border-radius: 10px;
+}
+.price_prod{
+    text-align: center;
+    color: rgb(229,46,85);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 25px;
+}
+
+.block{
+ display: flex;
+ justify-content: space-around;
+ margin: 50px 20px 50px 20px;
+ 
+  
+}
+
+.descr{
+    width: 40%;
+}
+
+.nameProd{
+   
+    color: rgb(229,46,85);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+.priceProd{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.buyBut{
+     
+    text-decoration: none;
+    color:white ;
+    height: 50px;
+    width:50%;
+    background-color: rgb(225,60,93);
+    border-radius: 13px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.descrProd{
+    margin-top: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    color: black;
 }

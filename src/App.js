@@ -5,15 +5,13 @@ import {NavLink} from "react-router-dom";
 
 
 
-import Baking from './component/Baking';
 import Cakes from './component/Cakes';
 import Checkout from './component/Checkout';
 import Contact from './component/Contact';
 import DeliveryAndPaiment from './component/DeliveryAndPaiment';
-import Dessert from './component/Desseert';
 import Login from './component/Login';
 import MainPage from './component/MainPage';
-import Pie from './component/Pie';
+import Description from './component/Description'
 import AboutUs from './component/AboutUs';
 
 import logo from './component/image/Logo.png';
@@ -53,8 +51,8 @@ function App() {
 <div class='main-border'>
 <div class= 'propose'>Что мы предлагаем?</div><br/>
 <div class="eat">
-     <p class='cake'>  <NavLink to="/cakes">Торты</NavLink> </p>
-     <p class='cupcakes'>  <NavLink to="/dessert">Капкейки</NavLink></p>
+     <p class='cake'>  <NavLink to="/cakes/" >Торты</NavLink> </p>
+     <p class='cupcakes'>  <NavLink to="/dessert" >Капкейки</NavLink></p>
      <p class='cheesecakes'>   <NavLink to="/pie">Чизкейки</NavLink> </p>
      <p class='baking'>   <NavLink to="/baking">Печение</NavLink> </p>
  </div>
@@ -63,11 +61,12 @@ function App() {
 
       <div>
       <Switch>
+          <Route path='/description/:id' component={Description}/>
           <Route path='/about' component={AboutUs}/>
-          <Route path='/cakes' component={Cakes}/>
-          <Route path='/dessert/' component={Dessert}/>
-          <Route path='/pie/' component={Pie}/>
-          <Route path='/baking/' component={Baking}/>
+          <Route path='/cakes/' render={() => <Cakes param={1} />}/>
+          <Route path='/dessert/' render={() => <Cakes param={2} />}/>
+          <Route path='/pie/' render={() => <Cakes param={3} />}/>
+          <Route path='/baking/' render={() => <Cakes param={4} />}/>
           <Route path='/contact/' component={Contact}/>
           <Route path='/checkout/' component={Checkout}/>
           <Route path='/login/' component={Login}/>
